@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+  margin: 50px;
+  font-size: 50px;
+  color: blue;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#map {
+  height: 70vh;
+}
+
+.table > :not(caption) > * > * {
+  border-bottom-width: 0px;
+}

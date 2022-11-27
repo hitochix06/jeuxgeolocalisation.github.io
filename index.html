@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jeux geocalisation </title>
+  <!-- importe boostrap 5.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha385-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- importe lien de font FontAwesome  -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700,200" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7511ac4b90.js" crossorigin="anonymous"></script>
+
+  <!-- importe la police avec lien internet  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet" />
+
+  <!-- importe leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+
+
+
+  <!-- importe le fichier css  -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+  <h1>Jeu géolocalisation</h1>
+
+
+  <div class="container">
+    <div class="texte"></div>
+    <table class="table">
+      <thead>
+        <tr>
+          <!-- <th scope="col">#</th> -->
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col">Latitude</th>
+          <th scope="col">Longitude</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <th id="nombre" scope="row">1</th> -->
+          <td id="prenom"></td>
+          <td id="ville"></td>
+          <td id="latitude"></td>
+          <td id="longitude"></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <!-- <input type="text" class="form-control" id="search" placeholder="Rechercher"></input>
+    <div class="d-grid gap-2 p-3 col-3 mx-auto ">
+      <button id="button" class="btn btn-outline-primary">Aller </button>
+    </div> -->
+    <div class="text-center p-3">
+      <button type="button" id="button1" class="btn btn-primary">Où suis-je</button>
+      <button type="button" id="button3" class="btn btn-success ">Sauvegarder ma position</button>
+      <button type="button" id="button2" class="btn btn-secondary">Où étais-je</button>
+      <button type="button" id="button4" class="btn btn-danger">Reinitialiser</button>
+      <div class="message"></div>
+      <div class="message1"></div>
+    </div>
+
+    <div id="map"></div>
+
+
+  </div>
+
+  <!-- <form>
+    <div class="container">
+      <div class="row g-3 p-2">
+        <div class="col-6">
+          <input type="text" id="prenomForm" class="form-control" placeholder="Prénom" aria-label="prenom">
+        </div>
+        <div class="col-6">
+          <input type="text" id="villeForm" class="form-control" placeholder="Ville" aria-label="ville">
+        </div>
+      </div>
+    </div>
+    <div class="d-grid gap-2 col-2 p-3 mx-auto">
+      <button id="buttonForm" class="btn btn-outline-primary">Valide </button>
+    </div>
+  </form> -->
+
+
+
+
+
+
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+  <script type="text/javascript" src="javascript/js.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
